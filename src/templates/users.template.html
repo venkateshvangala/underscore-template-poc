@@ -1,0 +1,20 @@
+<table class="table">
+  <thead>
+    <th scope="col"> ID </th>
+    <th scope="col"> Name </th>
+    <th scope="col"> Email </th>
+    <th scope="col"> Phone </th>
+    <th scope="col"> Website </th>
+  </thead>
+  <tbody>
+    <% _.each(data, function(user) { %>
+      <tr>
+        <th scope="row"><%= user.id %></th>
+        <td><%= user.name %></td>
+        <td><%= user.email %></td>
+        <td><%= user.phone %></td>
+        <td><%= user.website %></td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
